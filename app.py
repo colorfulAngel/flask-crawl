@@ -4,8 +4,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello, World!'
+    return 'Hello, home!'
 
 @app.route('/about')
 def about():
     return 'About'
+
+@app.route('/hello', methods=['GET'])
+def hello_world():
+    return "Hello, World!"
+
+if __name__ == '__main__':
+    app.run()
