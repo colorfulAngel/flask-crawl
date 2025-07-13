@@ -1,6 +1,7 @@
 from flask import Flask, make_response, request
 import api
 import os
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -14,7 +15,8 @@ def about():
 
 @app.route('/hello', methods=['GET'])
 def hello_world():
-    return "Hello, World!"
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC")
+    return f"Flask API is alive. Time: {now}"
 
 @app.route('/get-big-trend', methods=['POST'])
 def getBigTrend():
