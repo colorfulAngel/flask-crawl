@@ -28,7 +28,7 @@ def dataPreparation(name_attribute, target_stock, fetch_years):
 
     # name_attribute = ['Date', 'Capacity', 'Turnover', 'Open', 'High', 'Low', 'Close', 'Change', 'Transcation']
     df = pd.DataFrame(columns= name_attribute, data = target_price)
-    print(df)
+    # print(df)
     return df, target_price
     
 

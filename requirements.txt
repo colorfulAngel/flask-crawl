@@ -1,9 +1,9 @@
 Flask==3.0.3
-matplotlib==3.10.3
-python-dateutil==2.9.0.post0
-statsmodels==0.14.4
-twstock==1.4.0
-pandas==2.2.3
-numpy==2.2.6
 gunicorn==21.2.0
-lxml==5.4.0
+lxml==5.2.1
+matplotlib==3.7.3
+numpy==1.26.4
+pandas==2.1.4
+python-dateutil==2.9.0.post0
+statsmodels==0.14.0
+twstock==1.4.0
