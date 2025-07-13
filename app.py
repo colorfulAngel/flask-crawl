@@ -21,8 +21,6 @@ def getBigTrend():
     target_stock = content["target_stock"]
     fetch_years = content["fetch_years"]
 
-    # target_stock = request.form.get("target_stock")
-    # fetch_years = request.form.get("fetch_years")
     print(f"[getBigTrend] target_stock:{target_stock}, fetch_years:{fetch_years}")
     status_code, df = api.getBigTrend(target_stock, fetch_years)
 
